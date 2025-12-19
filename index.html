@@ -24,28 +24,33 @@
         </div>
     </div>
     <!-- ГЛАВНЫЙ БЛОК -->
-    <div class="quiz-area">
-        <!-- Вопрос -->
-        <div class="question-text" id="questionText">Загрузка вопросов...</div>
+    <div class="main-wrapper"> 
         
-        <!-- Варианты ответа -->
-        <div class="options-container" id="optionsContainer">
-            <button class="quiz-btn" onclick="handleAnswer(0)">1</button>
-            <button class="quiz-btn" onclick="handleAnswer(1)">2</button>
-            <button class="quiz-btn" onclick="handleAnswer(2)">3</button>
-        </div>
-        
-        <!-- Сообщение (Верно/Ошибка) -->
-        <div class="status-msg" id="statusMsg"></div>
+        <!-- ГЛАВНЫЙ БЛОК -->
+        <div class="quiz-area">
+            <!-- Вопрос -->
+            <div class="question-text" id="questionText">Загрузка вопросов...</div>
+            
+            <!-- Варианты ответа -->
+            <div class="options-container" id="optionsContainer">
+                <button class="quiz-btn" onclick="handleAnswer(0)">1</button>
+                <button class="quiz-btn" onclick="handleAnswer(1)">2</button>
+                <button class="quiz-btn" onclick="handleAnswer(2)">3</button>
+            </div>
+            
+            <!-- Сообщение (Верно/Ошибка) -->
+            <div class="status-msg" id="statusMsg"></div>
 
-        <!-- Игровое поле -->
-        <div class="game-container">
-            <div class="board" id="board">
+            <!-- Игровое поле -->
+            <div class="game-container">
+                <div class="board" id="board">
+                </div>
             </div>
         </div>
 
-    </div>
-    <!-- Модальное окно -->
+    </div> <!-- Конец main-wrapper -->
+
+    <!-- Модальное окно (без изменений) -->
     <div class="modal" id="endModal">
         <h2 id="winnerText"></h2>
         <button class="restart-btn" onclick="restartGame()">Играть снова</button>
